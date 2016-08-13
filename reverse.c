@@ -3,15 +3,14 @@
 #include<string.h>
 int main()
 {
-  char a[10];
-  scanf("%s",a);
-  int n,i;
-  n=strlen(a);
-  
-  for(i=n;i>=0;i--)
+  int n,a,sum=0;
+  scanf("%d",&n);
+  while(n!=0)
   {
-    printf("%c",a[i]);
+    a=n%10;
+    sum=(sum*10)+a;
+    n=n/10;
   }
-  
+  printf("%d",sum);
   return 0;
 }
