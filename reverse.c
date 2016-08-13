@@ -5,7 +5,7 @@ int main()
 {
   char a[100];
   scanf("%s",a);
-  int n;
+  int n,i;
   n=strlen(a);
   
   for(i=n;i>=0;i--)
